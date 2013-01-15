@@ -3,6 +3,14 @@ title: Stuck.Pro
 layout: default
 ---
 <article>
+  <header>
+    <div class="date">
+      {{ site.posts.first.date | date: "%d %B, %Y" }}
+    </div>
+    <h1>
+      {{ site.posts.first.title }}
+    </h1>
+  </header>
   {{ site.posts.first.content }}
 </article>
 
