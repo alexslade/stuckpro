@@ -10,22 +10,32 @@ a
     color: $base-color
     text-decoration: underline
 
-nav
-  border-bottom: thin solid #ccc
-
 h1, h2
   // margin-top: 10px
   // margin-bottom: 0px
 
 p
 
-#site-title
-  display: block
-  width: 350px
-  height: 50px
-  background: url("/images/logo-short.png") no-repeat
-  background-size: 100%
-  margin: 20px auto 20px auto
-  text-indent: -500px
-  overflow: hidden
 
+
+header
+  border-bottom: 1px solid #ccc
+  height: 50px
+
+  #site-title
+    display: block
+    width: 130px
+    height: 30px
+    background: url("/images/logo-short.png") no-repeat -42px 0px
+    background-size: 210px
+    margin-top: 12px
+    text-indent: -200px
+    overflow: hidden
+    float: left
+
+nav
+  float: right
+  line-height: 64px
+  a
+    margin-left: 10px
+    color: $base-color
