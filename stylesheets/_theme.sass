@@ -10,17 +10,8 @@ a
     color: $base-color
     text-decoration: underline
 
-h1, h2
-  // margin-top: 10px
-  // margin-bottom: 0px
-
-p
-
-
-
 #site-header
   border-bottom: 1px solid #ddd
-  height: 50px
   margin-bottom: 20px
   font-family: "proxima-nova"
 
@@ -36,11 +27,24 @@ p
     float: left
 
 nav
-  float: right
+  +clearfix
   line-height: 64px
-  a
-    margin-left: 15px
-    color: $base-color
+  height: 50px
+  border-bottom: thin solid #ccc
+
+  #site-title
+    float: left
+  #site-links
+    float: right
+    a
+      margin-left: 15px
+      color: $base-color
+
+#stuck-intro
+  clear: both
+  padding-bottom: 15px
+  font-size: 15px
+
 
 
 article
