@@ -10,44 +10,46 @@ a
     color: $base-color
     text-decoration: underline
 
+// -------------------------------------------
+
 #site-header
-  border-bottom: 1px solid #ddd
   margin-bottom: 20px
-  font-family: "proxima-nova"
+  font-family: "proxima-nova"    
 
-  #site-title
-    display: block
-    width: 130px
-    height: 30px
-    background: url("/images/logo-short.png") no-repeat -42px 0px
-    background-size: 210px
-    margin-top: 12px
-    text-indent: -200px
+  nav
+    +clearfix
+    line-height: 52px
+    height: 50px
     overflow: hidden
-    float: left
+    margin: 0px 20px
 
-nav
-  +clearfix
-  line-height: 64px
-  height: 50px
-  border-bottom: thin solid #ccc
+    #site-title
+      display: block
+      float: left
+      width: 130px
+      height: 30px
+      background: url("/images/logo-short.png") no-repeat -42px 0px
+      background-size: 210px
+      margin-top: 11px
+      text-indent: -200px
+      overflow: hidden
+      float: left
+    #site-links
+      float: right
+      a
+        margin-left: 15px
+        color: $base-color
 
-  #site-title
-    float: left
-  #site-links
-    float: right
-    a
-      margin-left: 15px
-      color: $base-color
+  #stuck-intro
+    clear: both
+    font-size: 15px
+    background: #eee
+    padding: 15px 20px
 
-#stuck-intro
-  clear: both
-  padding-bottom: 15px
-  font-size: 15px
-
-
+// -----------------------------------------------
 
 article
+  margin: 0px 20px
   header
     margin: 40px 0px
   h1
