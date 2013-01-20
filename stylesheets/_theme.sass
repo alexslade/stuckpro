@@ -6,6 +6,7 @@ body
     border-top: 8px solid #C73
   +media($desktop)
     border-top: 8px solid #3C7
+    +outer-container
 
 
 a
@@ -25,6 +26,12 @@ ul
 #site-header
   margin-bottom: 20px
   font-family: "proxima-nova"    
+
+  // Switch to the left for desktop
+  +media($desktop)
+    +span-columns(4)
+    border-right: thin solid #ccc
+    margin-top: 32px
 
   nav
     +clearfix
@@ -54,6 +61,12 @@ ul
         background-size: 270px
         background-position: 0px 0px
         margin-top: 17px
+      +media($desktop)
+        width: 100%
+        background-size: 100%
+        background-position: 0px bottom
+        height: 48px
+
 
     #site-links
       float: right
@@ -67,6 +80,15 @@ ul
     padding: 15px 20px
     +media($tablet)
       padding: 15px 30px
+    +media($desktop)
+      background: none
+      margin-top: 20px
+      color: #999
+
+#site-content
+  +media($desktop)
+    +span-columns(8)
+    +omega
 
 // Individual post -----------------------------------------------
 
