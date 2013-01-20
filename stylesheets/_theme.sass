@@ -10,7 +10,12 @@ a
     color: $base-color
     text-decoration: underline
 
-// -------------------------------------------
+ul
+  list-style: none
+  text-indent: none
+  padding-left: 0px
+
+// Header -------------------------------------------
 
 #site-header
   margin-bottom: 20px
@@ -46,15 +51,23 @@ a
     background: #eee
     padding: 15px 20px
 
-// -----------------------------------------------
+// Individual post -----------------------------------------------
+
+section, article
+  padding: 0 20px
+  h1, h2
+    margin: 0
 
 article
-  margin: 0px 20px
   header
     margin: 40px 0px
-  h1
-    margin: 0
-  .date
-    font-size: 0.8em
-    color: #aaa
-    font-family: "proxima-nova"
+.date
+  font-size: 0.8em
+  color: #aaa
+  font-family: "proxima-nova"
+
+// List of posts -----------------------------------------------
+
+ul#posts
+  li
+    margin-bottom: 20px

@@ -1,0 +1,22 @@
+---
+title: Stuck.Pro archive
+layout: default
+---
+
+<section>
+  <h1> Previous posts </h1>
+  <ul id="posts">
+    {% for post in site.posts %}
+      <li>
+        <div class="date">
+          {{ post.date | date: "%d %B, %Y" }}
+        </div>
+        <h2>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
