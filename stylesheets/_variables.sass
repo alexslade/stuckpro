@@ -12,6 +12,14 @@
 $tablet: new-breakpoint(481px, 12)
 $desktop: new-breakpoint(769px, 12)
 
+=tablet
+  +media($tablet)
+    @content
+
+=desktop
+  +media($desktop)
+    @content
+
 // Fonts
 // 9, 10, 11, 12, 14, 16, 18, 21, 24, 30, 48, 60, 72
 

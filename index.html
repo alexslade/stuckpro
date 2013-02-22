@@ -4,12 +4,12 @@ layout: default
 ---
 <article>
   <header>
-    <div class="date">
-      {{ site.posts.first.date | date: "%d %B, %Y" }}
-    </div>
     <h1>
       {{ site.posts.first.title }}
     </h1>
+<!--     <div class="date">
+      {{ site.posts.first.date | date: "%d %B, %Y" }}
+    </div> -->
   </header>
   {{ site.posts.first.content }}
 </article>

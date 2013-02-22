@@ -9,7 +9,7 @@ layout: default
     {% for post in site.posts %}
       <li>
         <div class="date">
-          {{ post.date | date: "%d %B, %Y" }}
+          {{ post.date | date: "%B, %Y" }}
         </div>
         <h2>
           <a href="{{ post.url }}">

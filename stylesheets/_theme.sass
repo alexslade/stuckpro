@@ -1,8 +1,13 @@
-body
+html
   border-top: 8px solid $highlight-color
+  +tablet
+    border-top-width: 10px
+
+body
+  
   background-color: $bg-color
   color: $base-color
-  +media($desktop)
+  +desktop
     +outer-container
 
 
@@ -28,7 +33,7 @@ h1, h2
   font-family: "proxima-nova"    
 
   // Switch to the left for desktop
-  +media($desktop)
+  +desktop
     +span-columns(4)
     border-right: thin solid #ccc
     margin-top: 32px
@@ -40,7 +45,7 @@ h1, h2
     overflow: hidden
     margin: 0px 20px
 
-    +media($tablet)
+    +tablet
       height: 70px
       line-height: 74px
 
@@ -55,13 +60,13 @@ h1, h2
       text-indent: -200px
       overflow: hidden
       float: left
-      +media($tablet)
+      +tablet
         width: 270px
         height: 40px
         background-size: 270px
         background-position: 0px 0px
         margin-top: 17px
-      +media($desktop)
+      +desktop
         width: 100%
         background-size: 100%
         background-position: 0px bottom
@@ -78,15 +83,15 @@ h1, h2
     clear: both
     background: #eee
     padding: 15px 20px
-    +media($tablet)
+    +tablet
       padding: 15px 30px
-    +media($desktop)
+    +desktop
       background: none
       margin-top: 20px
       color: #999
 
 #site-content
-  +media($desktop)
+  +desktop
     +span-columns(8)
     +omega
 
@@ -94,7 +99,7 @@ h1, h2
 
 section, article
   padding: 0px 20px
-  +media($tablet)
+  +tablet
     padding: 0px 30px
 
 article
